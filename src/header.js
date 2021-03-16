@@ -6,30 +6,26 @@ import './App.css';
 function Header() {
   return (
     <div>
-        <Table responsive>
+        <Table responsive className="table-borderless">
             <tbody>
                 <tr className="header-img">
                     <td>
-                        <div className="header-left">
-                            <b>BEAUTY BONANZA Get Your Daily Dose of Amazing Offers</b>
-                        </div>
+                            <p>BEAUTY BONANZA Get Your Daily Dose of Amazing Offers</p>
                     </td>
                     <td>
-                        <div className="header-left">
-                            <img src="images/mobile-phone.png" alt="" width="20" height="20"/>
-                            GetApp&nbsp;&nbsp;|&nbsp;&nbsp;
-                            <img src="images/store.png" alt="" width="20" height="20"/>
-                            Store & Events&nbsp;&nbsp;|&nbsp;&nbsp;
-                            <img src="images/gift.png" alt="" width="20" height="20"/>
-                            Gift Card&nbsp;&nbsp;|&nbsp;&nbsp;
-                            <img src="images/help.png" alt="" width="20" height="20"/>
-                            Help&nbsp;&nbsp;
-                        </div>
+                            <img src="images/header/mobile-phone.png" alt="" width="20" height="20"/>
+                            &nbsp;GetApp&nbsp;|&nbsp;
+                            <img src="images/header/store.png" alt="" width="20" height="20"/>
+                            &nbsp;Store & Events&nbsp;|&nbsp;
+                            <img src="images/header/gift.png" alt="" width="20" height="20"/>
+                            &nbsp;Gift Card&nbsp;|&nbsp;
+                            <img src="images/header/help.png" alt="" width="20" height="20"/>
+                            &nbsp;Help
                     </td>
                 </tr>
             </tbody>
         </Table>
-        <Table responsive>
+        <Table responsive className="table-borderless">
             <tbody>
             <tr>
                     <td>
@@ -46,7 +42,7 @@ function Header() {
                     <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text id="basic-addon1">
-                                <img src="images/search.png" alt="" width="20" height="20"/>
+                                <img src="images/header/search.png" alt="" width="20" height="20"/>
                             </InputGroup.Text>
                         </InputGroup.Prepend>
                         <FormControl
@@ -55,14 +51,14 @@ function Header() {
                     </InputGroup>
                     </td>
                     <td>
-                        <img src="images/user.png" alt="" width="20" height="20"/>
+                        <img src="images/header/user.png" alt="" width="20" height="20"/>
                         Account&nbsp;&nbsp;
-                        <img src="images/bag.png" alt="" width="20" height="20"/>
+                        <img src="images/header/bag.png" alt="" width="20" height="20"/>
                     </td>
                 </tr>
             </tbody>
         </Table>
-        <Table responsive>
+        <Table responsive className="table-borderless">
             <tbody>
             <tr>
                 <div className="header3-left">

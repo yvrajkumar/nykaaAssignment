@@ -39,8 +39,37 @@
   background-repeat: no-repeat;
 }
 .header-left{
-  padding-left:15%;
+  padding-left:50%;
 }
 .header3-left{
   padding-left:10%;
+}
+.table-center{
+  padding: 0% 7% 0% 7%;
+}
+.footer-style1{
+  background-color: #3f414d;
+  border-color: #3f414d;
+}
+.white-text{
+  color: white;
+}
+.footer-input {
+  line-height: 33px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  outline: none;
+  padding-left: 5px;
+}
+.footer-style2{
+background-color: #8c8d94;
+}
+.footer-style3{
+  background-color: #fc2779;
+}
+.table {
+  margin-bottom: 0rem !important;
 }

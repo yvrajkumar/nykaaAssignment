@@ -1,8 +1,9 @@
-import {Table,Button} from 'react-bootstrap';
+import {Table,Button,Image} from 'react-bootstrap';
 import googlePlay from './images/footer/googlePlay.svg';
 import appStore from './images/footer/appStore.svg';
 import mobile from './images/footer/mobile.svg';
 import msg from './images/footer/msg.svg';
+import help from './images/footer/help.svg';
 import call from './images/footer/call.svg';
 import nykaa from './images/footer/nykaa.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +12,7 @@ import './App.css';
 function Footer() {
   return (
     <div>
+       <div className="desktop-footer-style">
         <Table responsive variant="dark" className="table-margin table-borderless">
             <tbody>
                 <tr>
@@ -36,7 +38,7 @@ function Footer() {
                 </tr>
             </tbody>
         </Table>
-        <Table responsive className="footer-style2">
+        <Table responsive className="footer-style2 table-borderless">
             <tbody>
                 <tr>
                     <td className="white-text">
@@ -157,7 +159,108 @@ function Footer() {
                 </tr>
             </tbody>
         </Table>
+        </div>
+        <div className="mobile-footer-style">
+            <div align="center" className="dark-bg">
+                        <br></br>
+                        <p className="white-text"><Image src={mobile} alt="Mobile APP"  fluid/>&nbsp;&nbsp;EXPERIENCE THE NYKAA MOBILE APP</p>
+                        <a href="home"><img src={googlePlay} alt="Google Play" width="100" height="50"/></a>&nbsp;&nbsp;&nbsp;
+                        <a href="home"><img src={appStore} alt="App Store" width="100" height="50"/></a>
+            </div>
+            <div align="center">
+                <Table responsive className="table-borderless">
+                    <tr align="center">
+                        <td>
+                            <Image src="images/footer/post.png" alt="Mobile APP" fluid/> 
+                        </td>
+                        <td>
+                            <Image src="images/footer/trans.png" alt="Mobile APP" fluid/>
+                        </td>
+                        <td>
+                            <Image src="images/footer/prod.png" alt="Mobile APP" fluid/>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <b>1500 + BRANDS</b>
+                        </td>
+                        <td>
+                            <b>FREE SHIPPING</b>
+                        </td>
+                        <td>
+                            <b>GENUINE PRODUCTS</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <p>Well Curated 3Lakh + Products</p>
+                        </td>
+                        <td>
+                            <p>For Orders Above INR 500</p>
+                        </td>
+                        <td>
+                            <p>Sourced Directly From Brands</p>
+                        </td>
+                    </tr>
+                </Table>
+            </div>
+            <div align="center">
+                <b>SHOW US SOME LOVE</b><img src="images/footer/love.png" alt="Mobile APP" width="25" height="30"/><b>ON SOCIAL MEDIA</b>    
+                <Table responsive className="table-borderless">
+                    <tr>
+                        <td>
+                            <Image src="images/footer/instagram.png" alt="Mobile APP" fluid/>
+                        </td>
+                        <td>
+                            <Image src="images/footer/fb.png" alt="Mobile APP" fluid/>
+                        </td>
+                        <td>
+                            <Image src="images/footer/youtube.png" alt="Mobile APP" fluid/>
+                        </td>
+                        <td>
+                            <Image src="images/footer/twitter.png" alt="Mobile APP" fluid/>
+                        </td>
+                        <td>
+                            <Image src="images/footer/pinterset.png" alt="Mobile APP" fluid/>
+                        </td>
+                    </tr>
+                </Table>
+            </div>
+            <div align="center" className="dark-bg">
+                        <p className="white-text"><img src={msg} alt="Mobile APP" width="30" height="20"/>&nbsp;&nbsp;GET SPECIAL DISCOUNT IN YOUR INBOX</p>
+                        <Table responsive className="table-borderless">
+                        <tbody>
+                            <tr align="center">
+                                <td align="right">
+                                    <input type="text" name="email" value="" placeholder="Enter Your Email Id" className="footer-input null"/>
+                                </td>
+                                <td aligh="left">
+                                    <Button variant="secondary">Send</Button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </Table>
+            </div>
+            <div align="center" className="footer-style3">
+            <br></br>
+                <Table responsive className="footer-border">
+                <tbody>
+                <tr align="center">
+                    <img src={help} alt="Mobile APP" width="30" height="20"/>
+                    <span className="white-text">&nbsp;HELP CENTER</span>  
+                </tr>
+                <tr>
+                <br></br>
+                </tr>
+                </tbody>
+                </Table>
+                <br></br>
+                <p className="white-text"><span>©</span> 2021 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+                <br></br>
+            </div>
+        </div>
     </div>
+    
   );
 }
 

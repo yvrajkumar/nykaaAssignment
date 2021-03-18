@@ -73,3 +73,66 @@ background-color: #8c8d94;
 .table {
   margin-bottom: 0rem !important;
 }
+.nav-pad1{
+  padding-left: 10%;
+}
+.nav-pad2{
+  padding-left: 30%;
+}
+.a-style{
+  color: black;
+}
+.a-style:hover{
+  color: #fc2779;
+  text-decoration: none;
+}
+.nykaa-img-pad{
+  padding-left: 40%;
+}
+.overlay-bg{
+  background-color: #fff;
+}
+.tooltip-inner{
+  max-width: 100% !important;
+  color: #fff !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  padding: none !important;
+  align-content: center !important;
+}
+.btn-link {
+  color: black !important;
+  text-decoration: none !important;
+}
+.btn-link:hover{
+  color: #fc2779 !important;
+  text-decoration: none !important;
+}
+.btn.focus, .btn:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+
+@media(max-width:800px){
+  .desktop-footer-style{
+    display:none;
+  }
+}
+.mobile-footer-style{
+  display:none;
+}
+@media(max-width:800px){
+  .mobile-footer-style{
+    display:block;
+  }
+}
+.dark-bg{
+  background-color: #3f414d;
+}
+.footer-border{
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
